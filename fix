@@ -1,0 +1,2 @@
+downgrade sass-loader to 7.00
+npm rebuild node-sass
