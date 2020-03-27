@@ -19,6 +19,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/add-to-cart/{product}', 'CartController@add')->name('cart.add')->middleware('auth');
 Route::get('/cart', 'CartController@index')->name('cart.index')->middleware('auth');
 
+Route::get('/product/search', 'ProductController@search')->name('product.search');
+Route::resource('product', 'ProductController');
+
 Route::get('/cart/destroy{id}', 'CartController@destroy')->name('cart.destroy')->middleware('auth');
 Route::get('/cart/update{id}', 'CartController@update')->name('cart.update')->middleware('auth');
 Route::get('/cart/checkout', 'CartController@checkout')->name('cart.checkout')->middleware('auth');

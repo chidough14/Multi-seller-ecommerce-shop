@@ -8,21 +8,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
     <!-- all css here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="assets/css/icofont.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-    <link rel="stylesheet" href="assets/css/bundle.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/assets/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/assets/css/icofont.css">
+    <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="/assets/css/bundle.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -72,28 +72,14 @@
             <div class="header-bottom-wrapper pr-200 pl-200">
                 <div class="logo-3">
                     <a href="{{ route('home')}}">
-                        <img src="assets/img/logo/logo-3.png" alt="">
+                        <img src="/assets/img/logo/logo-3.png" alt="">
                     </a>
                 </div>
                 <div class="categories-search-wrapper">
-                    <div class="all-categories">
-                        <div class="select-wrapper">
-                            <select class="select">
-                                <option value="">All Categories</option>
-                                <option value="">Smartphones </option>
-                                <option value="">Computers</option>
-                                <option value="">Laptops </option>
-                                <option value="">Camerea </option>
-                                <option value="">Watches</option>
-                                <option value="">Lights </option>
-                                <option value="">Air conditioner</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="categories-wrapper">
-                        <form action="#">
-                            <input placeholder="Enter Your key word" type="text">
-                            <button type="button"> Search </button>
+                        <form action="{{ route('product.search')}}" method="GET">
+                            <input placeholder="Enter Your key word" name="query" type="text">
+                            <button type="submit"> Search </button>
                         </form>
                     </div>
                 </div>
@@ -532,18 +518,18 @@
 
 
     <!-- all js here -->
-    <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/ajax-mail.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="/assets/js/popper.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/ajax-mail.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
